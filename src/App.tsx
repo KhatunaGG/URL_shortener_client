@@ -15,7 +15,7 @@ function App() {
 
   const getAllUrls = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/url`);
+      const res = await axios.get(`${BASE_URL}`);
       setUrlData(res.data);
     } catch (error) {
       console.log(error);
